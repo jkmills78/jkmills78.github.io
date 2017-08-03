@@ -2,7 +2,7 @@
 
 <br/>
 <h3>Link to Project</h3>
-<br/>
+
 <a href="https://github.com/jkmills78/HelloWorldMVVM" target="_blank">Hello World MVVM Example Source Code</a>
 
 <br/>
