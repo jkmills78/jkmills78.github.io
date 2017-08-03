@@ -1,8 +1,3 @@
----
-layout: post
-title: C# MVVM Summary and Complete Example
----
-
 <h1>C# MVVM Summary and Complete Example</h1>
 
 <br/>
