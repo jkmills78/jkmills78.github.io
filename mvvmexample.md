@@ -3,7 +3,7 @@
 <br/>
 <h3>Link to Project</h3>
 <p>
-<a href="https://github.com/jkmills78/HelloWorldMVVM">Hello World MVVM Example Source Code</a>
+<a href="https://github.com/jkmills78/HelloWorldMVVM" target="_blank">Hello World MVVM Example Source Code</a>
 </p>
 
 <br/>
@@ -82,7 +82,7 @@ Alter `App.xaml` to point to the new **View**
 
 <p>
 
-Begin with building the **ViewModel** first. The class must implement the `INotifyPropertyChanged` interface, declare a `PropertyChangedEventHandler` event, and create a method to raise the event (source: <a href="https://docs.microsoft.com/en-us/dotnet/framework/wpf/data/how-to-implement-property-change-notification">MSDN: How to Implement Property Change Notification</a>). Next, declare a field and a corresponding property, making sure to call the `OnPropertyChanged()` method in the property's `set` accessor. The constructor in the below example is being used to demonstrate that the `Model` provides the data to the `ViewModel`.
+Begin with building the **ViewModel** first. The class must implement the `INotifyPropertyChanged` interface, declare a `PropertyChangedEventHandler` event, and create a method to raise the event (source: <a href="https://docs.microsoft.com/en-us/dotnet/framework/wpf/data/how-to-implement-property-change-notification" target="_blank">MSDN: How to Implement Property Change Notification</a>). Next, declare a field and a corresponding property, making sure to call the `OnPropertyChanged()` method in the property's `set` accessor. The constructor in the below example is being used to demonstrate that the `Model` provides the data to the `ViewModel`.
 
 ```cs
 using System;
