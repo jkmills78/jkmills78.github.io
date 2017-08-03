@@ -7,7 +7,6 @@
 
 <br/>
 <h2>Summary</h2>
-<br/>
 
 ***MVVM*** is an architectural pattern that is represented by three distinct components, the **Model**, **View** and **ViewModel**. In order to understand these three layers, it is necessary to briefly define each, followed by an explanation of how they work together.
 
@@ -32,7 +31,6 @@ A major component for two-way communication (***Data Binding***) is the <a href=
 
 <br/>
 <h2>The Build</h2>
-<br/>
 
 Create a new WPF Application project
 
@@ -66,7 +64,6 @@ Alter `App.xaml` to point to the new **View**
 
 <br/>
 <h3>ViewModel</h3>
-<br/>
 
 Begin with building the **ViewModel** first. The class must implement the `INotifyPropertyChanged` interface, declare a `PropertyChangedEventHandler` event, and create a method to raise the event (source: <a href="https://docs.microsoft.com/en-us/dotnet/framework/wpf/data/how-to-implement-property-change-notification" target="_blank">MSDN: How to Implement Property Change Notification</a>). Next, declare a field and a corresponding property, making sure to call the `OnPropertyChanged()` method in the property's `set` accessor. The constructor in the below example is being used to demonstrate that the `Model` provides the data to the `ViewModel`.
 
@@ -122,7 +119,6 @@ namespace MyMVVMProject.ViewModel
 
 <br/>
 <h3>Model</h3>
-<br/>
 
 Next, build the **Model**. As stated previously, The **Model** provides data for the **ViewModel** by pulling it from a repository (as well as pushing it back to the repository for saving). This is demonstrated below with the `GetData()` method, which will return a simple `List<string>`. Business logic is also applied in this layer, and can be seen in the ConcatenateData() method. This method builds the sentence “Hello, world!” from the List<string> that was previously returned from our mock *repository*.
 
@@ -180,7 +176,6 @@ namespace MyMVVMProject.Model
 
 <br/>
 <h3>View</h3>
-<br/>
 
 Finally, the **View** can be built. There is nothing that needs to be added to the code behind for this example, although this can vary depending on the needs of the application. However, there are a few lines added to the XAML. The `Window` needs a reference to the `ViewModel` namespace. This is mapped to the XAML namespace `xmlns:vm="clr-namespace:MyMVVMProject.ViewModel"`. Next, the Window needs a `DataContext`. This is set to `<vm:HelloWorldViewModel/>`. Now the label (or control of your choosing) can be added to the window. The key point at this stage is to ensure that you set the **Binding** to the property of the **ViewModel** that you wish to display as the label content. In this case, it is `{Binding HelloString}`.
 
