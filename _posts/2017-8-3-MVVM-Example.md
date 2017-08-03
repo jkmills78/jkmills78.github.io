@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C# MVVM Summary and Complete Example
+title: MVVM Example
 ---
 
 {% include navigation.html %}
@@ -127,7 +127,7 @@ namespace MyMVVMProject.ViewModel
 <br/>
 <h3>Model</h3>
 
-Next, build the **Model**. As stated previously, The **Model** provides data for the **ViewModel** by pulling it from a repository (as well as pushing it back to the repository for saving). This is demonstrated below with the `GetData()` method, which will return a simple `List<string>`. Business logic is also applied in this layer, and can be seen in the ConcatenateData() method. This method builds the sentence ìHello, world!î from the List<string> that was previously returned from our mock *repository*.
+Next, build the **Model**. As stated previously, The **Model** provides data for the **ViewModel** by pulling it from a repository (as well as pushing it back to the repository for saving). This is demonstrated below with the `GetData()` method, which will return a simple `List<string>`. Business logic is also applied in this layer, and can be seen in the ConcatenateData() method. This method builds the sentence ‚ÄúHello, world!‚Äù from the List<string> that was previously returned from our mock *repository*.
 
 ```cs
 using System;
