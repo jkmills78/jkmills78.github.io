@@ -1,8 +1,7 @@
 theme: jekyll-theme-slate
 title: Kevin's Site
 description: More to come soon...
-permalink: /blog/:year/:month/:day/:title
+permalink: pretty
 collections:
   code_examples:
     output: true
-    permalink: pretty

@@ -4,6 +4,8 @@ title: Links
 description: Here are some links that I have found very useful in the past.
 ---
 
+{% include head.html %}
+
 <h1>Useful Links That Developers at Any Level Should Have</h1>
 
 <h3>Tools</h3>
