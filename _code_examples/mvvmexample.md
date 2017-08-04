@@ -4,8 +4,6 @@ title: C# MVVM Summary and Complete Example
 description: This is a brief walkthrough of MVVM.  It includes the power of using MVVM, the construction of this architecture type, and discusses the various elements that interact to make this work.
 ---
 
-{% include navigation.html %}
-
 <br/>
 <h3>Link to Project</h3>
 
