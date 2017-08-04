@@ -1,6 +1,5 @@
 ---
-layout: page
-title: Code
+layout: default
 ---
 
 <div class="code">
