@@ -4,7 +4,6 @@ layout: default
 {% include head.html %}
 
 <div class="code">
-  <h1>{{ code.title }}</h1>
   <div class="blog-post spacing">
     {{ content }}
   </div>
