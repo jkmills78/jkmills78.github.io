@@ -2,6 +2,12 @@ theme: jekyll-theme-slate
 title: Kevin's Site
 description: More to come soon...
 permalink: pretty
+repository: jkmills78/jkmills78.github.io
+github: [metadata]
+encoding: UTF-8
+kramdown:
+  input: GFM
+  hard_wrap: false
 collections:
   code_examples:
     output: true

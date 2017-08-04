@@ -9,9 +9,12 @@
       $('.nav-dropdown').hide();
     });
   });
-  document.querySelector('#nav-toggle').addEventListener('click', function() {
-    this.classList.toggle('active');
-  });
+  var toggle = document.querySelector('#nav-toggle')
+  if(toggle) {
+    toggle.addEventListener('click', function() {
+      this.classList.toggle('active');
+    });
+  }
   $('#nav-toggle').click(function() {
     $('nav ul').toggle();
   });
