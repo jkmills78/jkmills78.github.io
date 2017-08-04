@@ -2,3 +2,6 @@ theme: jekyll-theme-slate
 title: Kevin's Site
 description: More to come soon...
 permalink: /blog/:year/:month/:day/:title
+collection:
+  code:
+    output: true
