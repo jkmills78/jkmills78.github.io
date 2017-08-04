@@ -7,7 +7,7 @@ description: These are various code examples that I have built to help remind my
 
 {% for code in site.code_examples %}
 <div class="code">
-    <h2><a href="{{ code.url }}">{{ code.title }}</a></h2>
+    <h4><a href="{{ code.url }}">{{ code.title }}</a><hr/></h4>
     <div class="code-synopsis">
         {{ code.description }}
     </div>
