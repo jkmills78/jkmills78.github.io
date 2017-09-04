@@ -16,7 +16,7 @@ description: This is a brief walkthrough of MVVM.  It includes the power of usin
 
 **Model** is the layer that drives the business logic. It retrieves and stores information from any data source for consumption by the **ViewModel**.
 
-**ViewModel** is the layer that acts as a bridge between the **View** and the **Model*. It may or may not transform the raw data from the **Model** into a presentable form for the **View**. An example transformation would be: a boolean flag from the model to string of 'True' or 'False' for the **View**.
+**ViewModel** is the layer that acts as a bridge between the **View** and the **Model**. It may or may not transform the raw data from the **Model** into a presentable form for the **View**. An example transformation would be: a boolean flag from the model to string of 'True' or 'False' for the **View**.
 
 **View** is the layer that represents the interface of the software (i.e. the GUI). Its role is to display the information *from* the **ViewModel** to the user, and to communicate the changes of the information back to the **ViewModel**.
 
