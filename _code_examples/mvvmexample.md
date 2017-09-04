@@ -39,11 +39,11 @@ A major component for two-way communication (***Data Binding***) is the <a href=
 Create a new WPF Application project
 
 <br/>
-<img src ="/images/mvvmexample1.png" alt="Create a new WPF Application project"/>
+<img src ="/assets/images/mvvmexample1.png" alt="Create a new WPF Application project"/>
 Create three new folders in your solution: **Model**, **ViewModel** and **View**, and delete the original `MainWindow.xaml`, just to get a fresh start.
 
 <br/>
-<img src="/images/mvvmexample2.png" alt="Create 3 new folders in your solution"/>
+<img src="/assets/images/mvvmexample2.png" alt="Create 3 new folders in your solution"/>
 Create three new items, each corresponding to a separate layer:
 
 * Right click the **Model** folder, and add a ***Class*** item called `HelloWorldModel.cs`.
@@ -51,7 +51,7 @@ Create three new items, each corresponding to a separate layer:
 * Right click the **View** folder, and add a ***Window (WPF)*** item called `HelloWorldView.xaml`.
 
 <br/>
-<img src="/images/mvvmexample3.png" alt="Add the three items"/>
+<img src="/assets/images/mvvmexample3.png" alt="Add the three items"/>
 Alter `App.xaml` to point to the new **View**
 
 ```xaml

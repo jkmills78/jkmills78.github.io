@@ -30,14 +30,27 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <head>
-  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src='http://localhost:4000/assets/js/nav.js' type="text/javascript"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="Kevin's Site : More to come soon...">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='http://localhost:4000/assets/js/nav.js' type="text/javascript"></script>
+    
+    <title>Kevin's Site</title>
 </head>
 <!-- Belongs at: /_includes/navigation.html -->
 
 <!-- This finds the current page so it can be highlighted. -->
 
+
+
+    
+        
+    
 
 
     
@@ -53,18 +66,24 @@
 	<div id="nav-toggle">
 	</div>
   <div class="nav-container">
-    <div class="brand">
-      <a href="#!">Logo</a>
-    </div>
 	<nav>
 		<ul>
+		
+			
+				<!-- We have to declare it 'null' to ensure it doesn't propagate. -->
+				
+			
+			
+			
+			<li><a href="/">Home</a></li>
+			
 		
 			
 				
 			
 			
 			
-			<li class="current"><a href="/">Home</a></li>
+			<li class="current"><a href="/code_examples">Code Examples</a></li>
 			
 		
 			
@@ -73,24 +92,14 @@
 			
 			
 			
-			<li>
-				<a href="/group/">Group of Things</a>
-				<ul>
-					
-					<li><a href="/group/si1">Sub-item 1</a></li>
-					
-					<li><a href="/group/si2">Sub-item 2</a></li>
-					
-					<li><a href="/group/si3">Sub-item 3</a></li>
-					
-				</ul>
-			</li>
+			<li><a href="/links">Useful Links</a></li>
 			
 		
 		</ul>
 	</nav>
   </div>
 </section>
+<div class="clear-floats"/>
 
 <div class="code">
   <h1></h1>
@@ -134,11 +143,11 @@
 <p>Create a new WPF Application project</p>
 
 <p><br />
-<img src="/images/mvvmexample1.png" alt="Create a new WPF Application project" />
+<img src="/assets/images/mvvmexample1.png" alt="Create a new WPF Application project" />
 Create three new folders in your solution: <strong>Model</strong>, <strong>ViewModel</strong> and <strong>View</strong>, and delete the original <code class="highlighter-rouge">MainWindow.xaml</code>, just to get a fresh start.</p>
 
 <p><br />
-<img src="/images/mvvmexample2.png" alt="Create 3 new folders in your solution" />
+<img src="/assets/images/mvvmexample2.png" alt="Create 3 new folders in your solution" />
 Create three new items, each corresponding to a separate layer:</p>
 
 <ul>
@@ -148,7 +157,7 @@ Create three new items, each corresponding to a separate layer:</p>
 </ul>
 
 <p><br />
-<img src="/images/mvvmexample3.png" alt="Add the three items" />
+<img src="/assets/images/mvvmexample3.png" alt="Add the three items" />
 Alter <code class="highlighter-rouge">App.xaml</code> to point to the new <strong>View</strong></p>
 
 <pre><code class="language-xaml">&lt;Application x:Class="MyMVVMProject.App"

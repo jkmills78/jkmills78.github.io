@@ -4,8 +4,5 @@ title: Home
 ---
 {% include head.html %}
 
-More information will go here as I decide how I want to build this site out.
-
-[Code Examples](code_examples.md)
-<br/>
-[Useful Links](links.md)
+Hello!  Welcome to my GitHub page!
+More coming soon...

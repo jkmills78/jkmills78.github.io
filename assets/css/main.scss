@@ -1,3 +1,15 @@
 ---
 ---
 @import "nav";
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.clear-floats {
+    clear: both;
+}
+
+#main_content_wrap {
+    padding: 0px 0px 50px 0px;
+}

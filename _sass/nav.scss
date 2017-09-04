@@ -6,11 +6,14 @@ $nav-font-color: #ffffff;
 $link-hover-color: #2581DC;
 
 nav {
-  float: right;
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    .current a {
+      background: $link-hover-color;
+      color: $nav-font-color;
+    }
     li {
       float: left;
       position: relative;
@@ -29,6 +32,13 @@ nav {
         padding-left: 4px;
         content: ' ▾';
         } 
+      }
+      ul {
+        position: relative;
+        left: -9999px;
+      }
+      &:hover ul{
+        left: 0px;
       }
       ul li {
         & a {
@@ -138,18 +148,4 @@ nav {
 .nav-container {
   max-width: $content-width;
   margin: 0 auto;
-}
-
-.brand {
-  position: absolute;
-  padding-left: 20px;
-  float: left;
-  line-height: $nav-height;
-  text-transform: uppercase;
-  font-size: 1.4em;
-  a,
-  a:visited {
-    color: $nav-font-color;
-    text-decoration: none;
-  }
 }
