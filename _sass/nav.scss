@@ -1,9 +1,22 @@
 $content-width: 1000px;
 $breakpoint: 800px;
-$nav-height: 70px;
+$nav-height: 50px;
 $nav-background: #262626;
 $nav-font-color: #ffffff;
 $link-hover-color: #2581DC;
+
+#nav-accent {
+  // From: https://www.cssmatic.com/gradient-generator#'\-moz\-linear\-gradient\%28left\%2C\%20rgba\%2837\%2C129\%2C220\%2C1\%29\%200\%25\%2C\%20rgba\%2882\%2C160\%2C233\%2C1\%29\%2028\%25\%2C\%20rgba\%28122\%2C188\%2C245\%2C1\%29\%2053\%25\%2C\%20rgba\%2874\%2C118\%2C147\%2C1\%29\%2080\%25\%2C\%20rgba\%2838\%2C67\%2C74\%2C1\%29\%20100\%25\%29\%3B'
+  background: rgba(37,129,220,1);
+  background: -moz-linear-gradient(left, rgba(37,129,220,1) 0%, rgba(82,160,233,1) 28%, rgba(122,188,245,1) 53%, rgba(74,118,147,1) 80%, rgba(38,67,74,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(37,129,220,1)), color-stop(28%, rgba(82,160,233,1)), color-stop(53%, rgba(122,188,245,1)), color-stop(80%, rgba(74,118,147,1)), color-stop(100%, rgba(38,67,74,1)));
+  background: -webkit-linear-gradient(left, rgba(37,129,220,1) 0%, rgba(82,160,233,1) 28%, rgba(122,188,245,1) 53%, rgba(74,118,147,1) 80%, rgba(38,67,74,1) 100%);
+  background: -o-linear-gradient(left, rgba(37,129,220,1) 0%, rgba(82,160,233,1) 28%, rgba(122,188,245,1) 53%, rgba(74,118,147,1) 80%, rgba(38,67,74,1) 100%);
+  background: -ms-linear-gradient(left, rgba(37,129,220,1) 0%, rgba(82,160,233,1) 28%, rgba(122,188,245,1) 53%, rgba(74,118,147,1) 80%, rgba(38,67,74,1) 100%);
+  background: linear-gradient(to right, rgba(37,129,220,1) 0%, rgba(82,160,233,1) 28%, rgba(122,188,245,1) 53%, rgba(74,118,147,1) 80%, rgba(38,67,74,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2581dc', endColorstr='#26434a', GradientType=1 );
+  height: 10px;
+}
 
 nav {
   ul {
@@ -13,6 +26,8 @@ nav {
     .current a {
       background: $link-hover-color;
       color: $nav-font-color;
+      border-radius: 10px;
+      margin: 5px;
     }
     li {
       float: left;
@@ -24,9 +39,12 @@ nav {
         background: $nav-background;
         color: $nav-font-color;
         text-decoration: none;
+        margin: 5px;
         &:hover {
           background: $link-hover-color;
           color: $nav-font-color;
+          border-radius: 10px;
+          margin: 5px;
         }
         &:not(:only-child):after {
         padding-left: 4px;
@@ -44,6 +62,7 @@ nav {
         & a {
           padding: 15px;
           line-height: 20px;
+          margin: 5px;
           z-index: 1;
         }
       }
@@ -121,6 +140,7 @@ nav {
          a {
           padding: 15px;
           line-height: 20px;
+          margin: 5px;
         }
         ul li a {
           padding-left: 30px;
@@ -141,11 +161,10 @@ nav {
 }
 
 .navigation {
-  height: $nav-height;
+  height: $nav-height + 10;
   background: $nav-background;
 }
 
 .nav-container {
-  max-width: $content-width;
   margin: 0 auto;
 }

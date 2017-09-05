@@ -11,3 +11,8 @@ kramdown:
 collections:
   code_examples:
     output: true
+profiles:
+  github: https://github.com/jkmills78
+  linkedin: https://www.linkedin.com/in/kevinmills78/
+  stackoverflow: https://stackoverflow.com/users/1306571/kevin-mills
+  csslp: https://www.youracclaim.com/badges/2a5db860-fdbb-4aff-bbb7-8ab498f56aeb/public_url

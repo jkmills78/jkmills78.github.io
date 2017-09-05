@@ -3,7 +3,6 @@ layout: default
 title: Code Examples
 description: These are various code examples that I have built to help remind myself of how to do certain tasks.
 ---
-{% include head.html %}
 
 {% for code in site.code_examples %}
 <div class="code">

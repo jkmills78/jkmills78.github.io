@@ -1,0 +1,37 @@
+---
+---
+@import "{{ site.theme }}";
+@import "nav";
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.clear-floats {
+    clear: both;
+}
+
+#main_content_wrap {
+    padding: 0px 0px 50px 0px;
+}
+
+.profile_icon {
+    height: 50px;
+    float: right;
+    padding: 0;
+    margin: 5px;
+}
+
+img {
+    position: relative;
+    margin: 0 auto;
+    max-width: 739px;
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none; 
+}
