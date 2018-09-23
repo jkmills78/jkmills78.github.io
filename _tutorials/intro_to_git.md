@@ -4,7 +4,7 @@ title: Git and Github Walkthrough
 description: This is a brief walkthrough of git.  It includes the initial setup, the steps involved in updating a repository, and the purpose of each command.
 ---
 
-# {{ post.title }}
+# {{ page.title }}
 
 ## Summary
 
