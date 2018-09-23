@@ -4,7 +4,9 @@ title: Git and Github Walkthrough
 description: This is a brief walkthrough of git.  It includes the initial setup, the steps involved in updating a repository, and the purpose of each command.
 ---
 
-# Summary
+# {{ post.title }}
+
+## Summary
 
 To quote from the <a href="https://git-scm.com/" target="_blank">git homepage</a>:
 
@@ -14,7 +16,7 @@ To quote from the <a href="https://git-scm.com/" target="_blank">git homepage</a
 
 A git ```repository``` is a place where you can maintain version control for your project.  Each project should have its own separate ```repository``` so that you can maintain each project individually.  The power of version control is that you can go to any point along the timeline of a development project, and view or alter that code.  Keep in mind that everything located in this folder will be added to your ```repository```, unless you have added it to your .gitignore file, so be careful not to initialze your entire harddrive as a git ```repository```.
 
-You can maintain many copies of the same ```repository```, which allows many different contributors to work on the same project simultaneously, as well as many other benefits outside of the scope of this tutorial.  As you follow through the tutorial, you will notice that I refer to local repositories and remote repositories.  When I refer to the *local ```repository```*, I simply mean the ```repository``` copy that exists on your computer.  In the context of this tutorial, when I refer to the *remote ```repository```* (or simply *remote*), I am refering to the ```repository``` that exists on Github.  When I refer to a *project*, I am simply talking about (typically) a single folder that contains all of the code for your application, sub-folders, and any other related files.  If you have multiple folders required for your project, you will need to put them all into one single containing folder.  Any text you see surrounded by angle brackets ```<>``` should be treated as a variable, meaning you will need to plug in the actual value, i.e. ```<PROJECT URL FROM ABOVE>``` would be replaced with ```my-awesome-project``` if using the tutorial project name (please note that the angle brackets are also replaced).
+You can maintain many copies of the same ```repository```, which allows many different contributors to work on the same project simultaneously, as well as many other benefits outside of the scope of this tutorial.  As you follow through the tutorial, you will notice that I refer to local repositories and remote repositories.  When I refer to the local ```repository```, I simply mean the ```repository``` copy that exists on your computer.  In the context of this tutorial, when I refer to the remote ```repository``` (or simply ```remote```), I am refering to the ```repository``` that exists on Github.  When I refer to a ```project```, I am talking about (typically) a single folder that contains all of the code for your application, sub-folders, and any other related files.  If you have multiple folders required for your project, you will need to put them all into one single containing folder.  Any text you see surrounded by angle brackets ```<>``` should be treated as a variable, meaning you will need to plug in the actual value, i.e. ```<PROJECT URL FROM ABOVE>``` would be replaced with ```my-awesome-project``` if using the tutorial project name (please note that the angle brackets are also replaced).
 
 ## The Walkthrough
 
@@ -192,3 +194,13 @@ Pulling is very important when you need to coordinate work from multiple machine
 ### Fetching
 
 Fetching allows git to download changes from a remore repository, as above, except that is will not perform any merging.  This allows you to get any remote changes to your repository, without making any changes to your current branch.  This can be useful if you really do not want your branch being updated, and potentially broken, by remote changes, but you still need to use the ```checkout``` command to access other branches that have been create on the remote repository by other developers.
+
+### Reset
+
+In git, you are able to roll your repository back to any given point in time.  In order to view your commit, you can type ```git log```, and you will see a list of all commits that you have made.  If you wish to roll back to one of these, there are several ways to accomplish this.  To get rid of current changes, and reset to the last commit, use the command ```git reset --hard HEAD```.  The ```--hard``` option tells git that you wish to discard all changes.  Alternatively, you can use the ```--soft``` option to move the commit reference only, but leave all code changes.  This can allow you to reset back to a specific commit, but leave all changes intact.
+
+In order to go back to a specific commit, in this example, let's say 3 commits back, you can use the command ```git reset --hard HEAD~3```.  If you would prefer to go back using the commit hash number, you can use the first 7 characters from a ```git log``` entry, i.e. ```git reset --hard f7edf77```.
+
+## Conclusion
+
+I hope this guide has helped you at least a little.  Please keep in mind that there are many more commands to use with git, as it is quite a powerful version control tool.  Please click read the <a href="https://git-scm.com/docs" target="_blank">official git documentation</a> to learn more.
