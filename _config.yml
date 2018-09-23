@@ -1,6 +1,5 @@
-theme: jekyll-theme-slate
-title: Kevin's Site
-description: More to come soon...
+title: Coding Reference
+description: Welcome to my site!  Inside you will find coding tutorials, resources, and other related information.
 permalink: pretty
 repository: jkmills78/jkmills78.github.io
 github: [metadata]
@@ -9,7 +8,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 collections:
-  code_examples:
+  tutorials:
     output: true
 profiles:
   github: https://github.com/jkmills78

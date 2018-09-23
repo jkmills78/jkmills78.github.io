@@ -1,13 +1,13 @@
 - title: Home
   url: /
-- title: Code Examples
-  url: /code_examples
+- title: Tutorials
+  url: /tutorials
 - title: Useful Links
   url: /links
 #- title: Interesting Things
   #url:
   #sublinks:
-    #- title: Code Examples
-      #url: /code_examples
+    #- title: Tutorials
+      #url: /tutorials
     #- title: Useful Links
       #url: /links
