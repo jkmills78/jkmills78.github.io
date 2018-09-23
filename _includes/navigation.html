@@ -11,36 +11,53 @@
 {% endfor %}
 
 <!-- Then we build the nav bar. -->
-<div id="nav-accent"></div>
-<section class="navigation">
-	<div id="nav-toggle">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+	<div class="container">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				{% for entry in site.data.navigation %}
+				{% if entry.url == current_page %}
+					{% assign current = 'active' %}
+				{% else %}
+					<!-- We have to declare it 'null' to ensure it doesn't propagate. -->
+					{% assign current = null %}
+				{% endif %}
+				{% assign sublinks = entry.sublinks %}
+					{% if sublinks %}
+					<li class="nav-item dropdown {{ current }}">
+						<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ entry.title }}</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							{% for sublink in sublinks %}
+								<a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+							{% endfor %}
+						</div>
+					</li>
+					{% else %}
+					<li class="nav-item {{ current }}"><a class="nav-link" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
+					{% endif %}
+				{% endfor %}
+		<!--
+				<h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+				<h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2> -->
+
+				{% if site.show_downloads %}
+					<section id="downloads">
+					<a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+					<a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+					</section>
+				{% endif %}
+			</ul>
+			<div class="float-right">
+				<div class="nav">
+					<a href="{{ site.profiles.stackoverflow }}" target="_blank"><img class="m-1" style="width: 50px;" src="{{ site.url }}/assets/images/so-icon.svg"/></a>
+					<a href="{{ site.profiles.github }}" target="_blank"><img class="m-1" style="width: 50px;" src="{{ site.url }}/assets/images/octocat.svg"/></a>
+					<a href="{{ site.profiles.linkedin }}" target="_blank"><img class="m-1" style="width: 50px;" src="{{ site.url }}/assets/images/Linkedin_icon.svg"/></a>
+					<a href="{{ site.profiles.csslp }}" target="_blank"><img class="m-1" style="width: 50px;" src="{{ site.url }}/assets/images/csslp.png"/></a>
+				</div>
+			</div>
+		</div>
 	</div>
-  <div class="nav-container">
-	<nav>
-		<ul>
-		{% for entry in site.data.navigation %}
-			{% if entry.url == current_page %}
-				{% assign current = ' class="current"' %}
-			{% else %}
-				<!-- We have to declare it 'null' to ensure it doesn't propagate. -->
-				{% assign current = null %}
-			{% endif %}
-			{% assign sublinks = entry.sublinks %}
-			{% if sublinks %}
-			<li{{ current }}>
-				<a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-				<ul>
-					{% for sublink in sublinks %}
-					<li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-					{% endfor %}
-				</ul>
-			</li>
-			{% else %}
-			<li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
-			{% endif %}
-		{% endfor %}
-		</ul>
-	</nav>
-  </div>
-</section>
-<div class="clear-floats"/>
+</nav>
