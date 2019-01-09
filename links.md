@@ -14,7 +14,7 @@ description: Here are some links that I have found very useful in the past.
 <a href="https://git-scm.com/downloads">Git</a><br/>
 <a href="https://github.com/">GitHub</a><br/>
 <a href="https://about.gitlab.com/">GitLab</a><br/>
-<a href="https://filezilla-project.org/>Filezilla</a><br/>
+<a href="https://filezilla-project.org/">Filezilla</a><br/>
 
 <h3>Front End tools</h3>
 <a href="https://www.google.com/chrome/">Chrome</a><br/>
