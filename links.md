@@ -24,6 +24,10 @@ description: Here are some links that I have found very useful in the past.
 <a href="https://jquery.com/download/">jQuery</a><br/>
 <a href="https://getbootstrap.com/docs/4.1/getting-started/download/">Bootstrap</a><br/>
 
+<h3>Development Sandboxes</h3>
+<a href="https://codepen.io/">CodePen</a><br/>
+<a href="https://jsfiddle.net/">JSFiddle</a><br/>
+
 <h3>Visual Studio Tools</h3>
 <a href="http://supercharger.tools/">SuperCharger</a><br/>
 <a href="http://www.httrack.com/">Website Copier</a><br/>
