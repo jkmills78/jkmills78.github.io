@@ -39,6 +39,7 @@ description: Here are some links that I have found very useful in the past.
 <a href="https://www.joelonsoftware.com/">Joel on Software</a><br/>
 
 <h3>Information</h3>
+<a href="https://stackoverflow.com/">Stack Overflow</a><br/>
 <a href="https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/">Visual Studio Code Analytics</a><br/>
 <a href="https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations(v=vs.110).aspx">Data Annotations</a><br/>
 <a href="https://msdn.microsoft.com/en-us/library/system.environment.specialfolder(v=vs.110).aspx">Environment Special Folders</a><br/>
