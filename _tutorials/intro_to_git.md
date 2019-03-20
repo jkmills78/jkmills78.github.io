@@ -99,7 +99,7 @@ Prerequisite:  You must have git bash installed if you are on a PC, which you ca
     * ```mkdir``` is a command line tool to make a directory
   * ```git clone <PROJECT URL FROM ABOVE>```
 
-#### Explaination
+#### Explanation
 
 ```Clone``` is the command that is used to make an exact copy of a ```repository```.  You can achieve a similar result by downloading the ```repository``` from Github, and unzipping it.  However, using ```clone``` is the preferred way as it is faster, and helps prevent user error from causing issues in the process.
 
@@ -141,7 +141,7 @@ Prerequisite:  You must have git bash installed if you are on a PC, which you ca
   * ```git remote add origin <PROJECT URL FROM ABOVE>```
   * ```git push -u origin master```
 
-#### Explaination
+#### Explanation
 
 ```Init``` is how you tell git to create a new ```repository``` in the existing folder.  All files in this directory will be added to the ```repository```, unless you have included the file or file type in the .gitignore file.
 
@@ -161,7 +161,7 @@ Committing, as explained above, is just adding your changes to the repository.  
 
 Branching is how you can create working copies of your repository.  This allows you to be able to make changes to a branch and either bring those changes into your master branch, or discard those changes. The command ```git branch``` will display all of your local branches.  Be aware that this will not show your remote branches.  To create a new branch use the command ```git branch <BRANCH NAME>```, followed by ```git checkout <BRANCH NAME>``` to switch over to that branch.  A nice shorthand for this is ```git checkout -b <BRANCH NAME>```, which will roll both of those commands into one.
 
-If you break your application, or otherwise don't need any of your changes, you can switch to ```master``` by typing ```git checkout master``` followed by ```git branch -d <BRANCH NAME>```.  If this branch has uncommitted changes on the branch to be deleted, git will issue a warning.  If you really want to delete this branch, you can use the command ```git reset --hard HEAD``` followed by ```git branch -d <BRANCH NAME>```.  You may also want to delete a branch that has not been merged yet (more on this term later).  Git will issue a warning for this as well.  If you really inted on deleting this branch, you can type ```git branch -D <NBRANCH NAME>```.  Note the capital ```D``` that in used insted of the lowercase ```d``` for this command.
+If you break your application, or otherwise don't need any of your changes, you can switch to ```master``` by typing ```git checkout master``` followed by ```git branch -d <BRANCH NAME>```.  If this branch has uncommitted changes on the branch to be deleted, git will issue a warning.  If you really want to delete this branch, you can use the command ```git reset --hard HEAD``` followed by ```git branch -d <BRANCH NAME>```.  You may also want to delete a branch that has not been merged yet (more on this term later).  Git will issue a warning for this as well.  If you really intended on deleting this branch, you can type ```git branch -D <NBRANCH NAME>```.  Note the capital ```D``` that in used instead of the lowercase ```d``` for this command.
 
 ### Merging
 
@@ -193,7 +193,7 @@ Pulling is very important when you need to coordinate work from multiple machine
 
 ### Fetching
 
-Fetching allows git to download changes from a remore repository, as above, except that is will not perform any merging.  This allows you to get any remote changes to your repository, without making any changes to your current branch.  This can be useful if you really do not want your branch being updated, and potentially broken, by remote changes, but you still need to use the ```checkout``` command to access other branches that have been create on the remote repository by other developers.
+Fetching allows git to download changes from a remore repository, as above, except that is will not perform any merging.  This allows you to get any remote changes to your repository, without making any changes to your current branch.  This can be useful if you really do not want your branch being updated, and potentially broken, by remote changes, but you still need to use the ```checkout``` command to access other branches that have been created on the remote repository by other developers.
 
 ### Reset
 
