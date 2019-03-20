@@ -22,11 +22,11 @@ You can maintain many copies of the same ```repository```, which allows many dif
 
 ### Create a Remote Repository
 
-![Sign up for Github]("/assets/images/github1.png")
+![Sign up for Github](/assets/images/github1.png)
 
 Prerequisite: this step requires that you sign up for an account on Github.  Free and paid accounts both can follow this tutorial.
 
-![Create a repository]("/assets/images/github2.png")
+![Create a repository](/assets/images/github2.png)
 
 * Go to your profile
 * Create a new ```repository```
